@@ -26,4 +26,8 @@ touchSensor.on('change', function(newVal, oldVal){
   console.log('Changed to: ' + (newVal ? 'pressed' : 'released'));
 })
 
+infraSensor.on('change', function(val){
+  console.log('Distance is: ' + val);
+})
+
 }); // end ready
